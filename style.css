@@ -1,0 +1,285 @@
+/* Reset di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo della pagina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+header nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Sezione Presentazione */
+.hero {
+    background-color: #009688;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Sezione Prodotti */
+#prodotti {
+    padding: 20px;
+    background-color: #fff;
+}
+
+#prodotti h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.griglia-prodotti {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.prodotto {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prodotto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.prodotto h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.prodotto p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: #009688;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #00796b;
+}
+
+/* Sezione Contatti */
+#contatti {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media Queries per dispositivi mobili */
+@media (max-width: 768px) {
+    .griglia-prodotti {
+        grid-template-columns: 1fr 1fr;
+    }
+/* Stili per il metodo di pagamento */
+.metodo-pagamento {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.metodo-pagamento h4 {
+    font-size: 20px;
+    color: #009688;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.metodo-pagamento p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Stili per il pulsante "Acquista ora" */
+.acquisto-btn {
+    display: inline-block;
+    background-color: #009688;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 30px; /* Spazio sopra il pulsante */
+    text-align: center;
+}
+
+.acquisto-btn:hover {
+    background-color: #00796b;
+}
+
+/* Media Queries per dispositivi mobili */
+@media (max-width: 768px) {
+    .acquisto-btn {
+        padding: 12px 25px; /* Ridurre il padding sui dispositivi mobili */
+        font-size: 16px; /* Ridurre la dimensione del testo */
+    }
+
+    .metodo-pagamento h4 {
+        font-size: 18px; /* Ridurre la dimensione del titolo sui dispositivi mobili */
+    }
+
+    .metodo-pagamento p {
+        font-size: 14px; /* Ridurre la dimensione del testo sui dispositivi mobili */
+    }
+/* Stili generali per il prodotto */
+#dettagli {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.prodotto-info {
+    display: flex; /* Usa Flexbox per creare due colonne */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Spazio tra l'immagine e le informazioni */
+}
+
+.prodotto-immagine {
+    flex: 1; /* L'immagine occupa il 50% della larghezza */
+    max-width: 500px; /* Limita la larghezza massima dell'immagine */
+}
+
+.prodotto-immagine img {
+    width: 100%; /* L'immagine riempie il contenitore */
+    height: auto; /* Mantieni le proporzioni */
+}
+
+.prodotto-dettagli {
+    flex: 2; /* Le informazioni occupano più spazio (2/3 della larghezza) */
+    max-width: 600px;
+}
+
+.prodotto-dettagli h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.prodotto-dettagli p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.prodotto-dettagli h3 {
+    font-size: 20px;
+    color: #009688;
+    margin-bottom: 15px;
+}
+
+/* Metodo di pagamento */
+.metodo-pagamento {
+    margin-top: 20px;
+}
+
+.metodo-pagamento h4 {
+    font-size: 20px;
+    color: #009688;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.metodo-pagamento p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Pulsante Acquista ora */
+.acquisto-btn {
+    display: inline-block;
+    background-color: #009688;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 30px; /* Spazio sopra il pulsante */
+    text-align: center;
+}
+
+.acquisto-btn:hover {
+    background-color: #00796b;
+}
+
+/* Media Queries per dispositivi mobili */
+@media (max-width: 768px) {
+    .prodotto-info {
+        flex-direction: column; /* Su dispositivi mobili, metti gli elementi in colonna */
+        align-items: center; /* Centra gli elementi */
+    }
+
+    .prodotto-immagine {
+        max-width: 80%; /* Riduci la larghezza dell'immagine sui dispositivi mobili */
+    }
+
+    .prodotto-dettagli {
+        max-width: 80%; /* Riduci la larghezza delle informazioni */
+    }
+
+    .acquisto-btn {
+        padding: 12px 25px; /* Ridurre il padding sui dispositivi mobili */
+        font-size: 16px; /* Ridurre la dimensione del testo */
+    }
+
+    .metodo-pagamento h4 {
+        font-size: 18px; /* Ridurre la dimensione del titolo sui dispositivi mobili */
+    }
+
+    .metodo-pagamento p {
+        font-size: 14px; /* Ridurre la dimensione del testo sui dispositivi mobili */
+    }
+}
+
+
